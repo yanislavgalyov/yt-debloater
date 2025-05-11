@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Remove YT Endscreen Elements",
+  "version": "1.0",
+  "description": "Removes all HTML elements with class 'ytp-ce-element-show'",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
